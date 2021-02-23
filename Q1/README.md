@@ -10,19 +10,19 @@
   
 ## **Expected Input:**
 >Simple app, you can just make it running on command line, no fancy here, just must have there inputs:
-* Input resto name
-* Input date of print
-* Input cashier name
-* Input item and price, for this can be multiple times input until the user said exit.
+1. Input resto name
+2. Input date of print
+3. Input cashier name
+4. Input item and price, for this can be multiple times input until the user said exit.
 
 
 ## **Expected Output:**
-* Warung Makan Sederhana
-* Tanggal :	2020/12/2020 15:30:00
-* Nama Kasir : 	    {{YourName}}
-* ===========================
-* Nasi...................Rp5.000
-* Lauk...................Rp10.000
-* Minum...................Rp5.000
+- Warung Makan Sederhana
+- Tanggal :	2020/12/2020 15:30:00
+- Nama Kasir : 	    {{YourName}}
+- ===========================
+- Nasi...................Rp5.000
+- Lauk...................Rp10.000
+- Minum...................Rp5.000
 
-* Total...................Rp20.000
+- Total...................Rp20.000
