@@ -11,3 +11,11 @@ https://gist.github.com/dhamanutd/6993984928506eea49908c2e3fcbc628
 5. Find users who are born in 1986. 
 6. Find articles that contain "tips" on the title. 
 7. Find articles published before August 2019.
+
+
+## How Run The Code ??
+1. Kill all node process on http://localhost:3000/
+2. open Q3 folder on terminal
+3. Run npm run json-server on terminal
+4. open new ternimal
+5. type node index.js in your terminal
