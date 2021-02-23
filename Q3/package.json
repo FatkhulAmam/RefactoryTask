@@ -1,0 +1,15 @@
+{
+  "name": "Q3",
+  "version": "1.0.0",
+  "description": "## JSON Data: https://gist.github.com/dhamanutd/97aa0d2131903ea8c071721032c7b2a3",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch inventory.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

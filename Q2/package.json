@@ -1,7 +1,7 @@
 {
   "name": "Q2",
   "version": "1.0.0",
-  "description": "",
+  "description": "## JSON Data: https://gist.github.com/dhamanutd/6993984928506eea49908c2e3fcbc628",
   "main": "index.js",
   "scripts": {
     "json:server": "json-server --watch profile.json"
@@ -12,5 +12,6 @@
   "dependencies": {
     "axios": "^0.21.1",
     "json-server": "^0.16.3"
-  }
+  },
+  "devDependencies": {}
 }
