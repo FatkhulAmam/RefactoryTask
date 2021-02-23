@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "listToDo-tvOS.app"
-               BlueprintName = "listToDo-tvOS"
-               ReferencedContainer = "container:listToDo.xcodeproj">
+               BuildableName = "List-tvOS.app"
+               BlueprintName = "List-tvOS"
+               ReferencedContainer = "container:List.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "listToDo-tvOSTests.xctest"
-               BlueprintName = "listToDo-tvOSTests"
-               ReferencedContainer = "container:listToDo.xcodeproj">
+               BuildableName = "List-tvOSTests.xctest"
+               BlueprintName = "List-tvOSTests"
+               ReferencedContainer = "container:List.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "listToDo-tvOS.app"
-            BlueprintName = "listToDo-tvOS"
-            ReferencedContainer = "container:listToDo.xcodeproj">
+            BuildableName = "List-tvOS.app"
+            BlueprintName = "List-tvOS"
+            ReferencedContainer = "container:List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "listToDo-tvOS.app"
-            BlueprintName = "listToDo-tvOS"
-            ReferencedContainer = "container:listToDo.xcodeproj">
+            BuildableName = "List-tvOS.app"
+            BlueprintName = "List-tvOS"
+            ReferencedContainer = "container:List.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
