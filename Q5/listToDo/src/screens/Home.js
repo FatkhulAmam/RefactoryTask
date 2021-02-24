@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, StatusBar, SafeAreaView, Image} from 'react-native';
 import {Header, Body, Text} from 'native-base';
+import moment from 'moment';
 import Avatar from '../assets/images/avatar.png';
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
             </View>
           </Body>
         </Header>
+      </View>
+      <View>
+        <Text style={styles.date}>{moment().format('LL')}</Text>
       </View>
     </SafeAreaView>
   );
@@ -48,6 +52,12 @@ const styles = StyleSheet.create({
     color: '#FABE2C',
     fontSize: 25,
     marginLeft: 20,
+    fontWeight: 'bold',
+  },
+  date: {
+    color: '#0442D0',
+    fontSize: 20,
+    margin: 15,
     fontWeight: 'bold',
   },
 });
