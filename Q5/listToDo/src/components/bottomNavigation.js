@@ -52,7 +52,7 @@ const BottomNavigation = ({state, descriptors, navigation}) => {
           if (label === 'Task') {
             return isFocused ? <HomeActive /> : <Home />;
           }
-          if (label === ' ') {
+          if (label === 'Write') {
             return isFocused ? <PlusActive /> : <Plus />;
           }
           if (label === 'Setting') {

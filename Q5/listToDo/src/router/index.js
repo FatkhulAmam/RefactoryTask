@@ -8,13 +8,13 @@ const Tab = createBottomTabNavigator();
 import BottomNavigation from '../components/bottomNavigation';
 import Home from '../screens/Home';
 import Setting from '../screens/Setting';
-import Add from '../screens/Add';
+import Write from '../screens/Add';
 
 const MainApp = () => {
   return (
     <Tab.Navigator tabBar={(props) => <BottomNavigation {...props} />}>
       <Tab.Screen name="Task" component={Home} />
-      <Tab.Screen name=" " component={Add} />
+      <Tab.Screen name="Write" component={Write} />
       <Tab.Screen name="Setting" component={Setting} />
     </Tab.Navigator>
   );
