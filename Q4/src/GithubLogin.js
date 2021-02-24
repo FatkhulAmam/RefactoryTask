@@ -27,26 +27,6 @@ class GitHubLogin extends Component {
     onFailure: () => {},
   };
 
-  onBtnClick = () => {
-    const { clientId, scope, redirectUri } = this.props;
-    const search = toQuery({
-      client_id: clientId,
-      scope,
-      redirect_uri: redirectUri,
-    });
-    const popup = (this.popup = PopupWindow.open(
-      "github-oauth-authorize",
-      `https://github.com/login/oauth/authorize?${search}`,
-      { height: 1000, width: 600 }
-    ));
-
-    this.onRequest();
-    popup.then(
-      (data) => this.onSuccess(data),
-      (error) => this.onFailure(error)
-    );
-  };
-
   onRequest = () => {
     this.props.onRequest();
   };
@@ -63,8 +43,42 @@ class GitHubLogin extends Component {
     this.props.onFailure(error);
   };
 
+  onBtnClick = () => {
+    const { clientId, scope, redirectUri } = this.props;
+    console.log(redirectUri);
+    const search = toQuery({
+      client_id: clientId,
+      scope,
+      redirect_uri: redirectUri,
+    });
+    const popup = (this.popup = PopupWindow.open(
+      "github-oauth-authorize",
+      `https://github.com/login/oauth/authorize?${search}`,
+      { height: 1000, width: 700 }
+    ));
+
+    this.onRequest();
+    popup.then(
+      (data) => this.onSuccess(data),
+      (error) => this.onFailure(error)
+    );
+  };
+
+  onGetProfile = (token) => {
+    axios({
+      method: "get",
+      url: `https://api.github.com/users`,
+      headers: {
+        Authorization: "token " + token,
+      },
+    }).then((response) => {
+      this.props.onSuccess(response.data);
+    });
+  };
+
   onGetAccessToken = (code) => {
     const { clientId, clientSecret } = this.props;
+    console.log(code);
     const body = {
       client_id: clientId,
       client_secret: clientSecret,
@@ -77,18 +91,6 @@ class GitHubLogin extends Component {
         this.onGetProfile(access_token);
       })
       .catch((err) => this.onFailure(err.message));
-  };
-
-  onGetProfile = (token) => {
-    axios({
-      method: "get",
-      url: `https://api.github.com/user`,
-      headers: {
-        Authorization: "token " + token,
-      },
-    }).then((response) => {
-      this.props.onSuccess(response.data);
-    });
   };
 
   render() {
