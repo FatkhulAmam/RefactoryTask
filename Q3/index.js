@@ -1,4 +1,5 @@
 const axios = require("axios");
+const moment = require('moment')
 
 async function getUser() {
   try {
@@ -6,7 +7,7 @@ async function getUser() {
     const arr1 = []
     const arr2 = []
     const arr3 = []
-    const arr4 = ['no user']
+    const arr4 = ['no data']
     const arr5 = []
     // 1. Find items in the Meeting Room.
     data.forEach(res=>{
@@ -27,6 +28,10 @@ async function getUser() {
       }
     })
     // 4. Find all items were purchased on 16 Januari 2020.
+    data.forEach(res=>{
+      console.log(moment(res.purchased_at).format('LL'));
+    })
+      // this date give date on january 19, 1970
     // 5. Find all items with brown color.
     data.forEach(res=>{
       res.tags.forEach(value=>{
