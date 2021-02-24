@@ -15,7 +15,9 @@ https://gist.github.com/dhamanutd/6993984928506eea49908c2e3fcbc628
 
 ## How Run The Code ??
 1. Kill all node process on http://localhost:3000/
-2. open Q3 folder on terminal
-3. Run npm run json-server on terminal
-4. open new ternimal
-5. type node index.js in your terminal
+2. clone repo
+3. open Q3 folder on terminal
+4. npm install/ yarn install
+5. Run 'npm run json:server' on terminal
+6. open new ternimal
+7. type node index.js in your terminal

@@ -3,7 +3,6 @@
 > A small restaurant wants to have an app to print a payment receipt, the resto has a dot matrix printer. While you developing the app to print that receipt, you have to make sure every input and output working as expected when printing the receipt by following the required parameters of dot matrix printer.
 
 ## **How To Run??**
-
 * Clone the repository
 * cd Q1 folder
 * Run program with type node index.js
